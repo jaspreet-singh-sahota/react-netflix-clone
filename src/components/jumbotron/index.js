@@ -1,10 +1,14 @@
 import React from 'react'
-import { inner } from "./styles/jumbotron";
+import { Inner } from "./styles/jumbotron";
 
-export default function Jumbotron() {
+export default function Jumbotron({direction = 'row', ...restProps}) {
   return (
-    <div>
-      I am a jumbo
-    </div>
+    <Inner direction={'column'}>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+      <h1>Hello world</h1>
+    </Inner>
   )
 }
